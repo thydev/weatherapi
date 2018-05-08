@@ -1,7 +1,9 @@
-<h1> Chicago, IL</h1>
-<img src="/assets/images/chicago.jpeg" alt="{{weather.name}}">
-<p>Humidity: {{weather.main.humidity}} </p>
-<p>Temperature (Average): {{weather.main.temp}} </p>
-<p>Temperature (High): {{weather.main.temp_max}} </p>
-<p>Temperature (Low): {{weather.main.temp_min}} </p>
-<p>Status: {{weather.weather[0].description}}</p>
+<div *ngIf="weather">
+    <h1> Chicago, IL</h1>
+    <img src="/assets/images/chicago.jpeg" alt="{{weather.name}}">
+    <p>Humidity: {{weather.main.humidity}} </p>
+    <p>Temperature (Average): {{weather.main.temp}} </p>
+    <p>Temperature (High): {{weather.main.temp_max}} </p>
+    <p>Temperature (Low): {{weather.main.temp_min}} </p>
+    <p>Status: {{weather.weather[0].description}}</p>
+</div>
